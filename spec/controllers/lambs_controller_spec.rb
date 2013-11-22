@@ -32,8 +32,6 @@ describe LambsController do
         }
       end
 
-      it { should respond_to format(:json) }
-
       it "redirects to the newly created lamb" do
         post :create, new_lamb
         expect(response).to redirect_to Lamb.last

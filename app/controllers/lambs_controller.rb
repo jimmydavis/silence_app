@@ -6,11 +6,6 @@ class LambsController < ApplicationController
 
   def create
     @lamb = Lamb.new(params[:lamb])
-    # if @lamb.save
-    #   redirect_to @lamb
-    # else
-    #   render :index
-    # end
     respond_to do |format|
       if @lamb.save
         format.html { redirect_to @lamb }
