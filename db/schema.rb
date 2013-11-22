@@ -14,9 +14,9 @@
 ActiveRecord::Schema.define(:version => 20131122141819) do
 
   create_table "lambs", :force => true do |t|
-    t.boolean  "is_silent",  :default => true
-    t.datetime "created_at",                   :null => false
-    t.datetime "updated_at",                   :null => false
+    t.boolean  "is_silent"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end

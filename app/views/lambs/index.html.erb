@@ -1,1 +1,7 @@
 <button id="create">Create Lamb</button>
+<h1>Are the lamb's silent?</h1>
+<div id="view_lambs">
+  <% @lambs.each do |lamb| %>
+   <li>Lamb <%= lamb.id %>: <%= lamb.is_silent %></li>
+  <% end %>
+</div>
